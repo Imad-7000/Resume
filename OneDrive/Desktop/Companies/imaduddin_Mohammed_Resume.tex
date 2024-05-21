@@ -1,0 +1,334 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Imaduddin Mohammed} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:61468779973}{+61 468 7799 73}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:mohammed.imaduddin01@gmail.com}{mohammed.imaduddin01@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/mohammed-imaduddin-4a1527149}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/Imad-7000}{GitHub}
+    $|$
+    {Adelaide, SA}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {The University of Adelaide
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Adelaide, SA}
+      {Master of Data Science;   \textbf{CGPA: 6.70/7.00}}{Jan 2020 \textbf{--} Jan 2022}
+      {}{}
+   \resumeEducationHeading
+      {Osmania University
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Hyderabad, India}
+      {Master of Data Science;   \textbf{CGPA: 6.38/7.00}}{Jun 2014 \textbf{--} Jun 2018}
+      {}{}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Languages:}{ C\#, Java, Python, JavaScript, SQL, MATLAB, R} \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{MS SQL Server, MySQL, Git, SVN, Docker, AWS, Azure, GCP, PyTorch, TensorFlow, Linux/Unix } \\ \vspace{3pt}
+        
+        \textbf{Methodologies:}{ Agile, OOP, Functional Programming, DevOps, CICD, TDD, Cloud Computing} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {PriceWaterhouseCoopers (PWC)}{Adelaide, SA}
+      {Technical Analyst}{Jan 2022 \textbf{--} Jan 2024, Full-time}
+        \resumeItemListStart
+            \resumeItem{Conducted comprehensive data analysis using Python and SQL, effectively extracting actionable insights from 30 million+ records  to support data-driven decision-making.}
+            \resumeItem{Designed and Helped Implement a complex graph data structure for connecting 10 million people with 25 million + properties for land tax client, thus improving current systems by 91.67\%.}
+            \resumeItem{Developed RESTful APIs in Java, enabling seamless integration and data exchange between PwC in-house applications and Oracle Independent Software Vendors (ISV's), hosted on Oracle marketplace.}
+            \resumeItem{Employed Python Pandas and Seaborn libraries to create compelling visualizations that facilitated data-driven decision-making}
+	  \resumeItem{Communicated with various stakeholders to create user requirement analysis for accountability, shifted the user teams towards test driven development, created BPMN diagrams for network management and showcased consistency \& discipline in analysis. }
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Development Bank of Singapore (DBS)}{Hyderabad, India}
+      {Software Engineer}{Jan 2019 \textbf{--} Dec 2019, Full-time}
+        \resumeItemListStart
+            \resumeItem{Involved in features such as loan processing optimisation, tracking user acivity and creating custom user portfolios on the DBS banking app using Java.}
+            \resumeItem{Migrated legacy C based frameworks to Java Spring ecosystem for Test Driven Development using groovy scripts. Spearheaded a POC transformation for legacy systems to Node JS framework. }
+            \resumeItem{Realized a significant 23\% boost in database performance by optimizing SQL procedures and queries. This optimization directly facilitated quicker query execution and improved data retrieval for critical banking functions.}
+	  \resumeItem{Collaborated with senior developers and product managers in scrum stand ups, sprint planning and retrospectives, code reviews and day to day development.}
+ 	  \resumeItem{Played a pivotal role in the development and implementation of a robust customizable alerts system within the DBS banking app using JToast library in Java.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {XIT Soltuions}{Hyderabad, India}
+      {Software Enginner  -Intern}{Oct 2017 \textbf{--} Nov 2018, Internship}
+        \resumeItemListStart
+            \resumeItem{Developed REST APIs using .Net MVC architecture and leveraged database technologies such as MS SQL Server  to create database schemas and stored procedures }
+            \resumeItem{Collaborated in deploying and maintaining the production code on Microsoft Azure cloud, actively utilizing Azure App Service, Azure SQL Database, and Azure Virtual Machines running on Linux}
+            \resumeItem{Assisted in implementing a cloud-based file system, on Azure, for object store-based data storage to address database concurrency and space-efficiency issues for a retail giant; improved time efficiency by 25\%}
+        \resumeItemListEnd
+
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Golden Key Fellowship:}{ Awarded to Univerosty  alumni who have graduated with a GPA greater than or equal to 6.5 by The Univeristy of Adelaide. (Jan 2022)} \\ \vspace{3pt}
+        \textbf{Post-Graduate Researcher }{ Awarded to students who take part in research projects carried out by the AI ML Department and score 98\% or higher (The University of Adelaide) Jun 2021)} \\ \vspace{3pt}
+
+        \textbf{Head of Computer Society}{ Acted and Represented Osmania University as head of Computer Society, undertook various coding bootcamps for freshers as part of it.} \\ \vspace{3pt}
+        \textbf{St. Andrews High School Valedictorian Award:}{ Graduated as the highest ranked student. (Jun 2014)}
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{Energy Consumption for Big Data Analytics}}{}
+          \resumeItemListStart
+            \resumeItem{Researched Big Data analytics and cloud computing, analysing energy consumption variations in different cloud types (private, hybrid and public cloud ) using Google Cloud Platform (GCP), OpenStack cloud and scripting languages (bash).}
+	  \resumeItem{Designed and coded automated bash scripts for both Unix (Linux administration) and PowerShell, automating synchronization of multiple servers, performing parallel executions, IP routing  on multiple VM’s, and recording responses in real time for hadoop, spark and Flink jobs}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Ad-blocking Wi-Fi Router}}{}
+          \resumeItemListStart
+            \resumeItem{A raspberry pi based project for creating a wifi router that can affectively block ads and spams from over 10 million+ sources and reduce navigation time around the internet by more than 50\% }
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{DSA - Competetive Coding} $|$ \emph{\href{https://github.com/Imad-7000/DSA-Problem-Solving}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Solved competitive programming problems that apply DS\&A concepts such as discrete-event simulation using priority queues, Dijkstra's shortest path algorithm, Prim's algorithm to find the minimum spanning tree, Kadane's algorithm,  weighted job scheduling with dynamic programming, and more to gain in-depth understanding of each concept and realise computer capacity in solving these problems.}
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+
+%----------- RELEVANT COURSEWORK -----------
+
+% \section{Relevant Coursework}
+  % \vspace{2pt}
+  % \resumeSubHeadingListStart
+    % \small{\item{
+        % \textbf{Major coursework:}{ Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision} \\ \vspace{3pt}
+        
+        % \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms, Computer Organization, Fundamentals of Software Engineering}
+    % }}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+
+% \section{Certificates}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Project Management and Personal Productivity}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- ORGANIZATIONS -----------
+
+% \section{Organizations}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Basketball, Swimming, Fitness, Eight-ball, Horology}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+% \section{References}
+  % \vspace{2pt}
+  % \resumeSubHeadingListStart
+    % \item{References available upon request.}
+  % \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
